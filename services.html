@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header, nav, footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-top: 0.5rem;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/web-design.png" alt="Web Design" />
+        <h3>Web Design</h3>
+        <p>Modern, responsive designs tailored to your brand and goals.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/developer.png" alt="Development" />
+        <h3>Web Development</h3>
+        <p>Custom-built websites and applications with clean code.</p>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\haans\lab3-multipage\images\seo-image-optimization-resized.jpeg" alt="SEO" />
+        <h3>SEO Optimization</h3>
+        <p>Improve your visibility on search engines and attract traffic.</p>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\haans\lab3-multipage\images\Digital marketing.jpg" alt="Marketing" />
+        <h3>Digital Marketing</h3>
+        <p>Grow your online presence through targeted digital strategies.</p>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Katrina's Lab 3. All rights reserved.</p>
+  </footer>
+</body>
+</html>

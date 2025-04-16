@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Katrina's Company</title>
+
+  <style>
+  /* Reset basic styles */
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header, Navigation, and Footer Styling */
+    header, nav, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background-image: url('C:/Users/haans/lab3-multipage/images/welcome text.jpg') center/cover no-repeat;
+      color: white;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    /* Content Section using Flexbox */
+    .content {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .intro, .sidebar {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      flex: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+</style>
+
+</head>
+<body>
+  <!-- Shared Header -->
+  <header>
+    <h1>Katrina's Company</h1>
+  </header>
+  <!-- Navigation Bar (shared across pages) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Banner / Welcome Text -->
+  <div class="hero">
+    <h1>Welcome to Our Website</h1>
+  </div>
+
+  <!-- Main Content Section with Flexbox -->
+  <div class="content">
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to our company website! We provide high-quality services to help you achieve your goals. Our dedicated team is committed to delivering innovative solutions tailored to your needs. Explore our website to learn more about what we offer.
+      </p>
+    </section>
+
+    <aside class="sidebar">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Innovative solutions</li>
+        <li>Expert team</li>
+        <li>Customer-centric approach</li>
+        <li>Efficient support</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer>
+    <p>&copy; 2025 Katrina's Lab 3. All rights reserved.</p>
+  </footer>
+</body>
+</html>

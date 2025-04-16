@@ -1,0 +1,104 @@
+/* ----------------------------------------- */
+/* Global Reset & Responsive Image Settings  */
+/* ----------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------- */
+/* Shared Navigation Bar (Flexbox Layout)    */
+/* ----------------------------------------- */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* :hover transition */
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #555;
+}
+
+/* ----------------------------------------- */
+/* Layouts using Flexbox & Grid               */
+/* ----------------------------------------- */
+
+/* Flexbox Layout Example */
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
+/* Grid Layout Example */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+/* ----------------------------------------- */
+/* Subtle Animation with @keyframes           */
+/* ----------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* ----------------------------------------- */
+/* Media Queries for Responsive Breakpoints   */
+/* ----------------------------------------- */
+
+/* Breakpoint: Max-width 1024px */
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Breakpoint: Max-width 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Breakpoint: Max-width 480px */
+@media (max-width: 480px) {
+  nav a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
